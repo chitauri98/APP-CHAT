@@ -1,0 +1,16 @@
+@keyframes my {
+  0% {
+    color: #f8cd0a;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: aqua;
+  }
+}
+.welcome-user {
+  font-size: 40px;
+  font-weight: bold;
+  animation: my 300ms infinite;
+}

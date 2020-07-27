@@ -1,0 +1,54 @@
+.register-container {
+  background: url(../images/register-background.jpg);
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+}
+.register-container .aside-right {
+  height: 100vh;
+  background-color: #ffffff;
+  width: 30%;
+}
+.register-container .aside-right h3 {
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(66, 210, 242);
+  text-align: center;
+  margin-top: 40px;
+}
+.register-container .input-name-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.register-container .input-name-wrapper .input-wrapper {
+  width: 48%;
+}
+#register-form {
+  padding: 20px;
+}
+.register-container .aside-right .form-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.register-container .aside-right span {
+  color: rgb(235, 35, 208);
+  cursor: pointer;
+}
+@keyframes my {
+  0% {
+    color: #f8cd0a;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: aqua;
+  }
+}
+.register-container .aside-right .header .nn {
+  font-size: 40px;
+  font-weight: bold;
+  animation: my 300ms infinite;
+}
