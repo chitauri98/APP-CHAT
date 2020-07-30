@@ -1,7 +1,7 @@
-const components = {};
+const components = {}
 components.welcomeScreen = `
 <h1>Welcome to Chat app</h1>
-`;
+`
 components.registerScreen = `
 <div class="register-container">
 <div class="aside-right">
@@ -52,12 +52,12 @@ components.registerScreen = `
   </form>
 </div>
 </div>
-`;
+`
 components.loginScreen = `
 <div class="login-container">
 <div class="aside-right">
   <div class="header">
-    <h3 class="nn" >MindX chat</h3>
+    <h3 class="nn">MindX chat</h3>
   </div>
   <form id="login-form">
     <div class="input-wrapper">
@@ -84,6 +84,29 @@ components.loginScreen = `
   </form>
 </div>
 </div>
-`;
+`
 components.chatScreen = `
-<h1 class='welcome-user'></h1>`;
+<div class="chat-container">
+<div class="header">
+  MindX Chat
+</div>
+<div class="main">
+  <div class="conversation-detail">
+    <div class="conversation-header">
+      First conversation
+    </div>
+    <div class="list-messages">
+    </div>
+    <form id="send-message-form">
+      <div class="input-wrapper">
+        <input type="text" name="message"
+          placeholder="Type a message">
+      </div>
+      <button type="submit">
+        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+      </button>
+    </form>
+  </div>
+</div>
+</div>
+`

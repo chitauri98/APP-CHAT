@@ -1,0 +1,108 @@
+@keyframes my {
+  0% {
+    color: #f8cd0a;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: aqua;
+  }
+}
+#welcome-user {
+  font-size: 40px;
+  font-weight: bold;
+  animation: my 300ms infinite;
+}
+.chat-container .header {
+  text-align: center;
+  height: 64px;
+  background: rgb(235, 35, 208);
+  line-height: 64px;
+  color: #fff;
+  font-size: 28px;
+}
+.chat-container .conversation-header {
+  height: 50px;
+  border-bottom: solid 0.5px rgb(235, 35, 208);
+  line-height: 50px;
+  text-align: center;
+  font-size: 20px;
+  color: #00cafc;
+}
+.chat-container {
+  height: 100vh;
+}
+.chat-container .main {
+  height: calc(100% - 64px);
+}
+.chat-container .main .conversation-detail {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.conversation-detail .list-messages {
+  flex-grow: 1;
+}
+#send-message-form .input-wrapper input {
+  border: none;
+  border-top: 1px solid rgb(235, 35, 208);
+  height: 40px;
+}
+#send-message-form {
+  position: relative;
+}
+#send-message-form button {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  border: none;
+  background: none;
+  color: rgb(235, 35, 208);
+  font-size: 17px;
+}
+#send-message-form .input-wrapper {
+  margin-bottom: 0px;
+}
+.chat-container .list-messages {
+  padding: 10px;
+  overflow-y: auto;
+}
+.chat-container .list-messages .message-container {
+  margin-bottom: 10px;
+
+}
+.chat-container .message-container .content {
+  padding: 7px 10px;
+  border-radius: 10px;
+  max-width: 40%;
+  width: max-content;
+}
+.chat-container .message-container.their .content {
+  background: rgb(41, 219, 80);
+  color: #fff;
+}
+.chat-container .message-container.mine .content {
+  background: rgb(235, 35, 208);
+  color: #fff;
+}
+.chat-container .message-container.mine {
+  display: flex;
+  justify-content: flex-end;
+}
+@keyframes my {
+  0% {
+    color: #f8cd0a;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: aqua;
+  }
+}
+.chat-container .header{
+  font-size: 40px;
+  font-weight: bold;
+  animation: my 300ms infinite;
+}

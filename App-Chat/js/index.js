@@ -12,6 +12,16 @@ const init = () => {
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   console.log(firebase.app().name);
-  view.setActiveScreen("registerScreen");
+  firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+      model.currentUser = {
+        displayName: user.displayName,
+        email: user.email,
+      };
+      view.setActiveScreen("chatScreen");
+    } else {
+      view.setActiveScreen("loginScreen");
+    }
+  });
 };
 window.onload = init;
